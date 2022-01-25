@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Food Corner</string>
+    <string name="request">Please Order Something...!</string>
+</resources>

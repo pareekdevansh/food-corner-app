@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="What would you like to have?"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion">
+
+        <RadioButton
+            android:id="@+id/rbTea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tea" />
+
+        <RadioButton
+            android:id="@+id/rbCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coffee" />
+
+        <RadioButton
+            android:id="@+id/rbMilk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Milk" />
+
+        <RadioButton
+            android:id="@+id/rbLemonade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lemonade" />
+
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbNamkeen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Namkeen"
+        app:layout_constraintStart_toStartOf="@id/rgDrink"
+        app:layout_constraintTop_toBottomOf="@id/rgDrink" />
+
+    <CheckBox
+        android:id="@+id/cbBiscuits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biscuits"
+        app:layout_constraintStart_toStartOf="@id/cbNamkeen"
+        app:layout_constraintTop_toBottomOf="@id/cbNamkeen" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cbBiscuits" />
+
+    <TextView
+        android:id="@+id/tvDrinks"
+        style="?attr/textAppearanceBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnOrder"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrder" />
+
+    <TextView
+        android:id="@+id/tvFood"
+        style="?attr/textAppearanceBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/tvDrinks"
+        app:layout_constraintStart_toStartOf="@+id/tvDrinks"
+        app:layout_constraintTop_toBottomOf="@+id/tvDrinks" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
